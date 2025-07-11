@@ -6,11 +6,17 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./data:/app/data
-    entrypoint: []
     command:
       - /bin/sh
       - -c
-      - sleep 5 && /app/spn-node prove --rpc-url https://rpc-production.succinct.xyz --throughput $${PGUS_PER_SECOND} --bid $${PROVE_PER_BPGU} --private-key $${PRIVATE_KEY} --prover $${PROVER_ADDRESS}
+      - |
+        sleep 5 && \
+        /app/spn-node prove \
+        --rpc-url https://rpc-production.succinct.xyz \  # Option RPC https://rpc.sepolia.succinct.xyz
+        --throughput $${PGUS_PER_SECOND} \
+        --bid $${PROVE_PER_BPGU} \
+        --private-key $${PRIVATE_KEY} \
+        --prover $${PROVER_ADDRESS}
     env_file:
       - .env
     restart: unless-stopped
