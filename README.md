@@ -12,6 +12,7 @@ docker run --rm public.ecr.aws/succinct-labs/spn-node:latest-cpu calibrate \
     --prove-price 1.00
 ```
 
+```
 Calibration Results:
 ┌──────────────────────┬─────────────────────────┐
 │ Metric               │ Value                   │
@@ -20,3 +21,4 @@ Calibration Results:
 ├──────────────────────┼─────────────────────────┤
 │ Estimated Bid Price  │ 3.27 $PROVE per 1B PGUs │
 └──────────────────────┴─────────────────────────┘
+```
