@@ -15,7 +15,7 @@ cd succinct-prover
 
 ## Installing setup Docker and depedency
 ```
-curl -sSL
+curl -sSL https://raw.githubusercontent.com/arcxteam/succinct-prover/refs/heads/main/docker.sh | bash
 ```
 
 ## Build docker run
