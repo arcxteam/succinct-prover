@@ -5,6 +5,7 @@ Guides Run Succinct Prover Spn-Node CPU with Docker
 # Full guide detail soon...
 
 - Goto here create your on Prover https://staking.sepolia.succinct.xyz/prover
+- Or staking with me boosting one https://staking.sepolia.succinct.xyz/?prover=0x43c1521281c6d7ea18d39ab033f5d99acdd90a40
 
 ## Cloning repo
 
@@ -63,3 +64,4 @@ docker compose logs -f
 # or docker logs -f succinct-prover
 # or docker logs -f --tail=100
 ```
+<img width="1435" height="539" alt="image" src="https://github.com/user-attachments/assets/f7784fe6-9dc8-4e86-a2fb-677f42ec7588" />
